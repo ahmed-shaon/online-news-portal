@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily News Blog</title>
+    <!-- link css -->
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <!-- header section star -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="#"><span class="bg-primary text-white p-1 rounded">Daily News</span> Portal</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-flex flex-row justify-content-lg-end" id="navbarSupportedContent">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <hr class="border">
+    </header>
+    <!-- header section end -->
+
+    <!-- main section start -->
+    <main class="container">
+        <section>
+            <h1 class="text-center fw-bold mb-3">My Blog</h1>
+            <div>
+                <h3 class="mb-4">Blog content</h3>
+                <!-- content no 1 -->
+                <div class="bg-white p-3 rounded mb-3">
+                    <h4 class="fw-bold">What is the differences among <strong>Var</strong> vs <strong>Let</strong> vs <strong>Const</strong> ?</h4>
+                    <p>The differences between var, let, and const variable declaration in JavaScript include:
+                        Variables declared with var and const are scoped to the immediate function body.
+                        Variables declared with the var keyword are hoisted. Hoisting means that the variable can be accessed in their enclosing scope even before they are declared.
+                        Variables declared with the let keyword are block-scoped, which means the variables will have scope to the immediate enclosing block.
+                        
+                        Let us now discuss, in detail, how these keywords can make a developer’s code more efficient and how to use each keyword to declare variables in JavaScript programs.</p>
+                </div>
+                <!-- content no 2 -->
+                <div class="bg-white p-3 rounded mb-3">
+                    <h4 class="fw-bold">What are the differences between <strong>Arrow Function</strong> vs <strong>Regular</strong>?</h4>
+                    <p>JavaScript's arrow functions might seem the same as regular functions on the surface, but they have some very important differences: <br>
+                        <ul>
+                            <li>Syntactical differences</li>
+                            <li>this value (execution context)</li>
+                            <li>Usage as methods</li>
+                            <li>Usage as constructors</li>
+                            <li>arguments binding</li>
+                        </ul>
+                        <br>
+                        <strong><h5 class="my-2 fw-bold">Syntax</h5></strong>
+                        <p class="mb-3">The first and most obvious difference between arrow functions and regular functions is their syntax. Not only do they look different, but arrow functions also provide an implicit return shorthand and allow parenthesis around fw-bold a single argument to be omitted.</p>
+                        <strong><h5 class="my-2 fw-bold">Execution context</h5></strong>
+                        <p class="mb-3">Inside a regular function, execution context (i.e. the value of this) is dynamic. This means that the value of this depends on how the function was invoked (simple invocation, method invocation, indirect invocation or constructor invocation). On the other hand, an arrow function does not define its own execution context. This results in an arrow function's this being resolved lexically (i.e. the scope in which the arrow function was defined).</p>
+                        <strong><h5 class="my-2 fw-bold">Methods</h5></strong>
+                        <p class="mb-3">Due to arrow functions not defining their own execution context, they're not well-suited for usage as methods. However, thanks to the Class fields proposal, arrow functions can be used as methods inside classes, if your environment supports it.</p>
+                        <strong><h5 class="my-2 fw-bold">Constructors</h5></strong>
+                        <p class="mb-3">Regular functions can be used as constructors, using the new keyword. Yet another consequence of the lexical resolution of this inside arrow functions is that they cannot be used as constructors. Using new with an arrow function results in a TypeError.</p>
+                        <strong><h5 class="my-2 fw-bold">Arguments</h5></strong>
+                        <p class="mb-3">Another difference is the binding of the arguments object. Unlike regular functions, arrow functions don't have their own arguments object. A modern alternative that circumvents this limitation is the usage of rest parameters.</p>
+                    </p>
+                </div>
+                <!-- content no 3 -->
+                <div class="bg-white p-3 rounded mb-3">
+                    <h4 class="fw-bold">What are the differences among <strong>Map</strong> vs <strong>ForEach</strong> vs <strong>Filter</strong> ?</h4>
+                    <p><strong>.map():</strong><br>
+                        .map() executes the same code on every element in an array and returns a new array with the updated elements. <br> <strong>Example</strong><br>In the example below we would use .map to iterate over the elements of the cost array and divide each element by 10, then assign our new array containing the new cost to the variable newCost. <br> <br> <strong>.forEach():</strong><br>.forEach(), is used to execute the same code on every element in an array but does not change the array and it returns undefined. <br> <strong>Example:</strong><br>In the example below we would use .forEach() to iterate over an array of food and log that we would want to eat each of them. <br><br> <strong>.filter():</strong> <br>.filter() checks every element in an array to see if it meets a certain criteria and returns a new array with the elements that return truthy for the criteria. <br><strong>Example:</strong><br>Example:
+                        In the example below we would use .filter to return values that are less than 200.</p>
+                </div>
+                <!-- content no 4 -->
+                <div class="bg-white p-3 rounded mb-3">
+                    <h4 class="fw-bold">What is the template string in JavaScript?</h4>
+                    <p>Template strings are a powerful feature of modern JavaScript released in ES6. It lets us insert/interpolate variables and expressions into strings without needing to concatenate like in older versions of JavaScript. It allows us to create strings that are complex and contain dynamic elements. Another great thing that comes with template strings are tags. Tags are functions that take a string and the decomposed parts of the string as parameters and are great for converting strings to different entities.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- main section end -->
+
+    <!-- javascript file link -->
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
